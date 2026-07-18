@@ -1,9 +1,21 @@
 import type { NextConfig } from "next";
 
+const backendUrl = (process.env.BACKEND_URL || "http://localhost:5000").replace(/\/$/, "");
+
 const nextConfig: NextConfig = {
   reactStrictMode: true,
   poweredByHeader: false,
   turbopack: { root: process.cwd() },
+
+  async rewrites() {
+    return [
+      {
+        source: "/api/:path*",
+        destination: `${backendUrl}/api/:path*`
+      }
+    ];
+  },
+
   async headers() {
     return [
       {

@@ -13,8 +13,8 @@ export function Footer() {
         <div><h3 className="font-bold text-white">Legal</h3><div className="mt-4 grid gap-3 text-sm"><Link href="/privacy">Privacy policy</Link><Link href="/terms">Terms of use</Link><Link href="/contact">Contact</Link></div></div>
         <div>
           <h3 className="font-bold text-white">Contact</h3>
-          <div className="mt-4 grid gap-3 text-sm"><Link href="/contact" className="flex items-center gap-2"><Mail size={16} />mdridoy144169@gmail.com</Link><span className="flex items-center gap-2"><MapPin size={16} />Remote-first platform</span></div>
-          <div className="mt-5 flex gap-3"><a href="https://github.com/WiZzard14" target="_blank" rel="noreferrer" aria-label="GitHub"><Github /></a><a href="https://www.linkedin.com" target="_blank" rel="noreferrer" aria-label="LinkedIn"><Linkedin /></a></div>
+          <div className="mt-4 grid gap-3 text-sm"><Link href="/contact" className="flex items-center gap-2"><Mail size={16} />Secure support form</Link><span className="flex items-center gap-2"><MapPin size={16} />Remote-first platform</span></div>
+          <div className="mt-5 flex gap-3"><a href="https://github.com" target="_blank" rel="noreferrer" aria-label="GitHub"><Github /></a><a href="https://www.linkedin.com" target="_blank" rel="noreferrer" aria-label="LinkedIn"><Linkedin /></a></div>
         </div>
       </div>
       <div className="border-t border-slate-800 px-4 py-5 text-center text-xs text-slate-500">© {new Date().getFullYear()} GrantPilot AI. Scholarship providers and official portals remain the final authority.</div>
