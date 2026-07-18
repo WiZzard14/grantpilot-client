@@ -1,9 +1,6 @@
 import type { ApiResponse } from "@/types";
 
-export const API_URL =
-  process.env.NEXT_PUBLIC_API_URL ??
-  process.env.NEXT_PUBLIC_API_BASE_URL ??
-  "/api";
+export const API_URL = "/api";
 
 interface ApiOptions extends RequestInit {
   retryAuth?: boolean;
